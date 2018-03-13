@@ -29,7 +29,9 @@ prediction_best = prediction_array[index]
 
 #Print out name and perdiction of best method
 names = [str(clf), str(clf1), str(clf2), str(clf3)]
-#print ("Given %i cm height, %i kgs weight, and a %i shoe size; the ['%s'] AI predicted the data was from a %s" 
-#	%(new_data[0], new_data[1], new_data[2], textwrap.shorten(names[index], width=50), prediction_best))
-for x in range (4):
-	print ("score: %i, name: %s, prediction: %s" %(prediction_score[x], textwrap.shorten(names[x], width=50), prediction_array[x]))
+#This print line gives the best guess
+print ("Given %i cm height, %i kgs weight, and a %i shoe size; the ['%s'] AI predicted the data was from a %s" %(new_data[0], new_data[1], new_data[2], textwrap.shorten(names[index], width=50), prediction_best))
+
+#This print line gives all guesses
+#for x in range (4):
+#	print ("score: %i, name: %s, prediction: %s" %(prediction_score[x], textwrap.shorten(names[x], width=50), prediction_array[x]))
